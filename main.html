@@ -213,7 +213,7 @@ Youtube貼り付けここまで -->
               v-on:answer-input="answerInput($event, 'stage3', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
               4番目の引数 'final' は最終ステージを表します。
             ------------------------------------------------------------------------------------------------------------------>
-            <answer-input v-bind:correct="correctAnswer['stage3']['q1']" v-on:answer-input="answerInput($event, 'stage3', 1, 'final')"></answer-input>
+            <answer-input v-bind:correct="correctAnswer['stage3']['q1']" v-on:answer-input="answerInput($event, 'stage3', 1)"></answer-input>
             <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
         </section>
@@ -233,7 +233,7 @@ Youtube貼り付けここまで -->
         <section class="section bg-color--keycolor">
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage"><s>STAGE：3</s></span>KEYWORD</h2>
-            <answer-input v-bind:correct="correctAnswer['stage3']['q2']" v-on:answer-input="answerInput($event, 'stage3', 2, 'final')"></answer-input>
+            <answer-input v-bind:correct="correctAnswer['stage3']['q2']" v-on:answer-input="answerInput($event, 'stage3', 2,)"></answer-input>
             <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
         </section>
@@ -255,16 +255,52 @@ Youtube貼り付けここまで -->
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage"><s>STAGE：3</s></span>KEYWORD</h2>
 
-            <answer-input v-bind:correct="correctAnswer['stage3']['q3']" v-on:answer-input="answerInput($event, 'stage3', 3, 'final')"></answer-input>
+            <answer-input v-bind:correct="correctAnswer['stage3']['q3']" v-on:answer-input="answerInput($event, 'stage3', 3,)"></answer-input>
             <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
         </section>
+
+        
+        
+<!-- STAGE4　ここから -->
+      <div v-if="next['stage3']" id="sectionStage4" class="stage">
+
+        <!-- STAGE4問題セクション　ここから -->
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage"><s>STAGE：4</s></span>FINAL</h2>
+            <p class="text-center">コノモンダイヲトキ、<br>
+              メッセージヲウケトレ。</p>
+            <figure class="image__container">
+              <img src="assets/images/stage.png" alt="">
+            </figure>
+          </div>
+        </section>
+        <!-- STAGE4問題セクション　ここまで -->
+
+        <!-- STAGE4解答入力セクションここから -->
+        <section class="section bg-color--keycolor">
+          <div class="container">
+            <h2 class="section-title"><span class="section-title__stage"><s>STAGE：4</s></span>KEYWORD</h2>
+            <!-----------------------------------------------------------------------------------------------------------------
+              解答入力欄のコンポーネントです。
+              v-on:answer-input="answerInput($event, 'stage3', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
+              4番目の引数 'final' は最終ステージを表します。
+            ------------------------------------------------------------------------------------------------------------------>
+            <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1, 'final')"></answer-input>
+            <a class="link-hint" href="hint4.html" target="hint4">ヒントをみる ></a>
+          </div>
+        </section>
+        <!-- STAGE4解答入力セクション　ここまで -->
+
+
+
 
 
 
           
       </div>
-      <!-- STAGE3　ここまで -->
+      <!-- STAGE4　ここまで -->
 
     </div>
   </main>
