@@ -17,9 +17,6 @@ const app = Vue.createApp({
       *    q3: 'おおお',
       */
       correctAnswer: {
-        stage1: {
-          q1: 'パスワード',
-        },
         stage2: {
           q1: '謎を全て解かなければ端末内のデータを破壊させてもらう',
           // q2: 'えええ',
@@ -39,9 +36,6 @@ const app = Vue.createApp({
       *  ex. 問題2-3を追加する場合は配列にfalseを追加します。
       */
       answer: {
-        stage1: [
-          false,
-        ],
         stage2: [
           false, // 2-1
           // false, // 2-2
@@ -59,7 +53,6 @@ const app = Vue.createApp({
 
       /* ステージの問題が全て正解かどうか */
       clear: {
-        stage1: false,
         stage2: false,
         stage3: false,
         stage4: false,
@@ -69,7 +62,6 @@ const app = Vue.createApp({
       *  最終ステージはページを遷移するので設定不要です。
       */
       next: {
-        stage1: false,
         stage2: false,
         stage3: false,
       },
