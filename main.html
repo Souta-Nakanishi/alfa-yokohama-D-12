@@ -258,8 +258,27 @@ Youtube貼り付けここまで -->
             <answer-input v-bind:correct="correctAnswer['stage3']['q3']" v-on:answer-input="answerInput($event, 'stage3', 3,)"></answer-input>
             <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
+
+              </div><!-- /.row -->
+
+            </div>
+          </div>
         </section>
-　　　　　　　　　　　　</div>
+
+        <!-- STAGE2クリア画面　ここから -->
+        <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">CLEAR</div>
+              <div class="clear-message__content">スベテノナゾヲトキ、<br>
+                ワタシカラノメッセージヲウケトレ。</div>
+                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">NEXT<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+            </div>
+          </div>
+        </section>
+        <!-- STAGE2クリア画面　ここまで -->
+      </div>
+      <!-- STAGE2　ここまで -->
         
         
 <!-- STAGE4　ここから -->
