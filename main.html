@@ -265,20 +265,19 @@ Youtube貼り付けここまで -->
           </div>
         </section>
 
-        <!-- STAGE2クリア画面　ここから -->
-        <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
+        <!-- STAGE3クリア画面　ここから -->
+        <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">CLEAR</div>
-              <div class="clear-message__content">スベテノナゾヲトキ、<br>
-                ワタシカラノメッセージヲウケトレ。</div>
-                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">NEXT<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <div class="clear-message__content">ツギデサイゴノモンダイダ。</div>
+                <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">NEXT<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
-        <!-- STAGE2クリア画面　ここまで -->
+        <!-- STAGE3クリア画面　ここまで -->
       </div>
-      <!-- STAGE2　ここまで -->
+      <!-- STAGE3 ここまで -->
         
         
 <!-- STAGE4　ここから -->
