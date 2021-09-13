@@ -100,7 +100,7 @@ app.component('answer-input', {
     return {
       /* 送信ボタン上下に表示されるメッセージ */
       okMessage: '正解',
-      ngMessage: '�エラー� 誤答の可能性あり',
+      ngMessage: '�ERROR� 誤答の可能性あり',
       message: '',
       inputAnswer: '',
     }
