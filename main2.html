@@ -69,17 +69,8 @@
                 漢字に直せ</p>
                   <p class="text-center"><font color="red">
                 謎を全て解かなければ</font></p>
-                  <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
-                  <div class="answer__container">
-      <div class="answer">
-        <input type="text" v-model="inputAnswer" placeholder="ここに答えを入力しよう">
-      </div>
-                     <p class="text-center"><font color="red">
-                を破壊する</font></p>
-      <p v-if="message === ngMessage" class="err-message">{{ message }}</p>
-      <button v-on:click="judgement(inputAnswer)">送信</button>
-      <p v-if="message === okMessage" class="err-message">{{ message }}</p>
-    </div>
+                  <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"><p class="text-center"><font color="red">
+                を破壊する</font></p></answer-input>
                   <p class="text-center"><font color="red">
                 を破壊する</font></p>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
