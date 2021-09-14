@@ -18,7 +18,7 @@ const app = Vue.createApp({
       */
       correctAnswer: {
         stage2: {
-          q1: '謎を全て解かなければ端末内のデータを破壊する',
+          q1: '端末内のデータ',
           // q2: 'えええ',
           // q3: 'おおお'
         },
@@ -99,7 +99,7 @@ app.component('answer-input', {
   data: function () {
     return {
       /* 送信ボタン上下に表示されるメッセージ */
-      okMessage: '正解',
+      okMessage: 'correct answer',
       ngMessage: '�ERROR� 誤答の可能性あり',
       message: '',
       inputAnswer: '',
