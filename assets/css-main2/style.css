@@ -216,6 +216,15 @@ button {
   left: 30px;
 }
 
+.card3__content {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 16px;
+  padding: 20px 30px;
+  margin: 0;
+  position: relative;
+}
+
 .card3__text {
   font-size: 18px;
   text-align: center;
