@@ -220,7 +220,7 @@ button {
   font-size: 18px;
   text-align: center;
   margin: 0;
-  padding: 20px 30px;
+  padding: 0px 0px;
   position: relative;
   cursor: pointer;
 }
