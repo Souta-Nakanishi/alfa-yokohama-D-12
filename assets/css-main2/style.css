@@ -216,6 +216,15 @@ button {
   left: 30px;
 }
 
+.card3__text {
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 30px;
+  position: relative;
+  cursor: pointer;
+}
+
 .hint-page .card {
   height: auto;
 }
